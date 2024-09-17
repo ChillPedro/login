@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static E-Commerce Site</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #e9d399; /* Dark background color for the navbar */
+      }
+      .navbar-brand {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: #ff6f00; /* Bright orange color for the brand */
+      }
+      .navbar-brand:hover {
+        color: #ffc107; /* Lighter orange on hover */
+      }
+      .navbar-nav .nav-link {
+        font-size: 1.1rem;
+        color: #ffffff; /* White text color */
+      }
+      .navbar-nav .nav-link:hover {
+        color: #ff6f00; /* Change color on hover for better visibility */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.1
+        ); /* Subtle background color on hover */
+      }
+      .navbar-toggler {
+        border-color: #ff6f00; /* Orange color for the toggler border */
+      }
+      .navbar-toggler-icon {
+        background-image: url('data:image/svg+xml;charset=utf8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3E%3Cpath stroke="%23ff6f00" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3E%3C/svg%3E'); /* Orange color for the toggler icon */
+      }
+      .hero {
+        background: url("https://wallpapercat.com/w/full/f/6/2/163022-2560x1440-desktop-hd-basketball-wallpaper-photo.jpg")
+          no-repeat center center;
+        background-size: cover;
+        color: white;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .hero h1 {
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .card {
+        margin: 15px 0;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .footer {
+        background: #343a40;
+        color: white;
+        padding: 20px 0;
+      }
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+      .carousel-caption h5,
+      .carousel-caption p {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      /* Adjustments for mobile view */
+      @media (max-width: 767.98px) {
+        .hero h1 {
+          font-size: 1.5rem;
+        }
+        .carousel-caption {
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          right: 0;
+          text-align: center;
+        }
+        .carousel-caption h5 {
+          font-size: 1.2rem;
+        }
+        .carousel-caption p {
+          font-size: 0.9rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">PAO KICKS</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+      <h1>Welcome to Our Store</h1>
+    </section>
+
+    <!-- Carousel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://i.pinimg.com/564x/fd/f8/3f/fdf83f34117e2e9ee727815bed51bacc.jpg"
+            alt="First slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Jordan 1 Retro High Obsidian UNC</h5>
+            <p>
+              The Air Jordan 1 Retro High Obsidian UNC is a limited edition
+              sneaker that pays homage to the classic colors of the University
+              of North Carolina.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/564x/d5/39/3c/d5393cfa9da295c2b084b9a57c462d33.jpg"
+            alt="Second slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nike Kobe 6 Protro Reverse Grinch</h5>
+            <p>
+              Nike Kobe 6 Protro Reverse Grinch Step into the future while
+              honoring a legend with the Nike Kobe 6 Protro Reverse Grinch. This
+              long-awaited sneaker, flips the script on the iconic Grinch
+              colorway. Boasting a Bright Crimson upper that mirrors the
+              intensity of Kobe's game, this shoe is a standout piece in any
+              collection.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i.pinimg.com/564x/66/6f/b8/666fb878402a14ce0ccac6909a9e3b6f.jpg"
+            alt="Third slide"
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Nike Kd 15 "What The"</h5>
+            <p>
+              Nike Museum Product Details The Nike Kd 15 “What The” Is A Unique
+              Colorway Of Kevin Durant’s Fifteenth Signature Shoe That Combines
+              Various Elements Of Previous Nike Kd Styles. The Popular And
+              Creative “What The” Theme Lands On The Kd 15, Giving The Shoe A
+              Head-Turning Appearance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <!-- Heading -->
+    <div class="container text-center my-5">
+      <h2>Featured Products</h2>
+      <p>Explore our best selling products.</p>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/fd/f8/3f/fdf83f34117e2e9ee727815bed51bacc.jpg"
+              class="card-img-top"
+              alt="Product 1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Jordan 1 Retro High Obsidian UNC</h5>
+              <p class="card-text">
+                The Air Jordan 1 Retro High Obsidian UNC is a limited edition
+                sneaker that pays homage to the classic colors of the University
+                of North Carolina.
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/d5/39/3c/d5393cfa9da295c2b084b9a57c462d33.jpg"
+              class="card-img-top"
+              alt="Product 2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nike Kobe 6 Protro Reverse Grinch</h5>
+              <p class="card-text">
+                Nike Kobe 6 Protro Reverse Grinch Step into the future while
+                honoring a legend with the Nike Kobe 6 Protro Reverse Grinch.
+                This long-awaited sneaker, flips the script on the iconic Grinch
+                colorway. Boasting a Bright Crimson upper that mirrors the
+                intensity of Kobe's game, this shoe is a standout piece in any
+                collection.
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img
+              src="https://i.pinimg.com/564x/66/6f/b8/666fb878402a14ce0ccac6909a9e3b6f.jpg"
+              class="card-img-top"
+              alt="Product 3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Nike Kd 15 "What The"</h5>
+              <p class="card-text">
+                Nike Museum Product Details The Nike Kd 15 “What The” Is A
+                Unique Colorway Of Kevin Durant’s Fifteenth Signature Shoe That
+                Combines Various Elements Of Previous Nike Kd Styles. The
+                Popular And Creative “What The” Theme Lands On The Kd 15, Giving
+                The Shoe A Head-Turning Appearance.
+              </p>
+              <a href="#" class="btn btn-primary">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+      <div class="container">
+        <p>&copy; 2024 PAO-KICKS. All rights reserved.</p>
+        <p>
+          <a href="#" class="text-light">Privacy Policy</a> |
+          <a href="#" class="text-light">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
